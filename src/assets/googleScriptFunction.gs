@@ -3,7 +3,7 @@ var numCols = 4; // Product name, Product price, Product stock, Image (name of j
 var httpHeaders = {
   "Accept": "application/json",
   "Content-Type": "application/json",
-  "Authorization": "Basic RGRZVm5RLmVydWlnZzpQUEczNFRYN1BtMjRFZE9L"
+  "Authorization": "Basic your_base64encoded_ably_API_key"
 };
 var httpOptions = {
   "method": "POST",

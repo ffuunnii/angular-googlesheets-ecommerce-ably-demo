@@ -21,16 +21,19 @@ Simble web application that use Angular frontend to show products with option to
 &nbsp;  
 
 &nbsp;1. Create empty google sheet and insert your stock data (example above)  
-&nbsp;2. Click Tools > Script editor > Paste code from [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs)  
-&nbsp;3. Click Publish > Deploy as web app... >  
-&nbsp;4. Copy Curent **web app URL** in format:&nbsp; `https://script.google.com/macros/s/id/exec`  
-&nbsp;5. Choose Execute the app as:&nbsp; `Me (youremail@gmail.com)`   
-&nbsp;6. Choose Who has access to the app:&nbsp; `Anyone, even anonymous`  
-&nbsp;7. Click update  
-&nbsp;8. Click Edit > Current project's triggers  
-&nbsp;9. Click Add Trigger > In the form choose&nbsp;`onEdit, Head, From spreadsheet, On Edit` and click Save  
-&nbsp;10. Open [ably.io](https://www.ably.io/) and navigate to the dashboard, choose your application and open Reactor tab  
-&nbsp;11. Click New Reactor Rule, Choose *Reactor Event*, Choose *Webhook*, Paste the google **web app URL** into URL, paste `Content-Type:application/json` into Headers, choose Message as Source, type in *purchase* as Channel Filter and click Create  
+&nbsp;2. At [ably.io](https://www.ably.io/) navigate to the Dashboard, choose the application you want to use, or create new (if you do not have any)  
+&nbsp;3. Open your application and choose API Keys tab, copy API key  
+&nbsp;4. Replace `your_base64encoded_ably_API_key` at line 6 in [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs) with your Ably API key in base64 format, encode the Ably API key for example [here](https://www.base64encode.org/)  
+&nbsp;5. Click Tools > Script editor > Paste code from [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs)  
+&nbsp;6. Click Publish > Deploy as web app... >  
+&nbsp;7. Copy Curent **web app URL** in format:&nbsp; `https://script.google.com/macros/s/id/exec`  
+&nbsp;8. Choose Execute the app as:&nbsp; `Me (youremail@gmail.com)`   
+&nbsp;9. Choose Who has access to the app:&nbsp; `Anyone, even anonymous`  
+&nbsp;10. Click update  
+&nbsp;11. Click Edit > Current project's triggers  
+&nbsp;12. Click Add Trigger > In the form choose&nbsp;`onEdit, Head, From spreadsheet, On Edit` and click Save  
+&nbsp;13. Open [ably.io](https://www.ably.io/) and navigate to the dashboard, choose your application and open Reactor tab  
+&nbsp;14. Click New Reactor Rule, Choose *Reactor Event*, Choose *Webhook*, Paste the google **web app URL** into URL, paste `Content-Type:application/json` into Headers, choose Message as Source, type in *purchase* as Channel Filter and click Create  
 
 &nbsp;  
 
@@ -41,7 +44,7 @@ Simble web application that use Angular frontend to show products with option to
 &nbsp;3. In the google sheet with your stock click File > Publish to the web  
 &nbsp;4. Copy Google Sheet ID from URL of the sheet `https://docs.google.com/spreadsheets/d/**googleSheetID**`  
 &nbsp;5. Paste the key into [environment.ts](/src/environments/environment.ts) file as `googleSheetID`  
-&nbsp;6.  At [ably.io](https://www.ably.io/) navigate to the Dashboard, choose the application you want to use, or create new  
+&nbsp;6. At [ably.io](https://www.ably.io/) navigate to the Dashboard, choose the application you want to use, or create new (if you do not have any)  
 &nbsp;7. Open your application and choose API Keys tab, copy API key  
 &nbsp;8. Paste the key into [environment.ts](/src/environments/environment.ts) file as `ablyAPIkey`  
 
