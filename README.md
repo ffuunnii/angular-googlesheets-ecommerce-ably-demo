@@ -24,7 +24,7 @@ Simble web application that use Angular frontend to show products with option to
 &nbsp;2. At [ably.io](https://www.ably.io/) navigate to the Dashboard, choose the application you want to use, or create new (if you do not have any)  
 &nbsp;3. Open your application and choose API Keys tab, copy API key  
 &nbsp;4. Replace `your_base64encoded_ably_API_key` at line 6 in [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs) with your Ably API key in base64 format, encode the Ably API key for example [here](https://www.base64encode.org/)  
-&nbsp;5. Click Tools > Script editor > Paste code from [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs)  
+&nbsp;5. In the sheet click Tools > Script editor > Paste code from [googleScriptFunction.gs](/src/assets/googleScriptFunction.gs)  
 &nbsp;6. Click Publish > Deploy as web app... >  
 &nbsp;7. Copy Curent **web app URL** in format:&nbsp; `https://script.google.com/macros/s/id/exec`  
 &nbsp;8. Choose Execute the app as:&nbsp; `Me (youremail@gmail.com)`   
@@ -55,7 +55,7 @@ Simble web application that use Angular frontend to show products with option to
 
 &nbsp;1. `npm install`  
 &nbsp;2. `ng serve --ssl true`  
-&nbsp;3. Click Buy on a product, or change the values in the google sheet and enjoy realtime updates  
+&nbsp;3. Click Buy on a product, or change the values in the google sheet and enjoy realtime updates :)  
 
 &nbsp;  
 
