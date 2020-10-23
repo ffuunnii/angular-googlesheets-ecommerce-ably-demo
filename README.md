@@ -28,7 +28,7 @@ Simble web application that use Angular frontend to show products with option to
 &nbsp;6. Choose Who has access to the app:&nbsp; `Anyone, even anonymous`  
 &nbsp;7. Click update  
 &nbsp;8. Click Edit > Current project's triggers  
-&nbsp;9. Click Add Trigger > In the form choose&nbsp;`onEdit, Head, From spreadsheet, On Edit` and click Save
+&nbsp;9. Click Add Trigger > In the form choose&nbsp;`onEdit, Head, From spreadsheet, On Edit` and click Save  
 &nbsp;10. Open [ably.io](https://www.ably.io/) and navigate to the dashboard, choose your application and open Reactor tab  
 &nbsp;11. Click New Reactor Rule, Choose *Reactor Event*, Choose *Webhook*, Paste the google **web app URL** into URL, paste `Content-Type:application/json` into Headers, choose Message as Source, type in *purchase* as Channel Filter and click Create  
 
