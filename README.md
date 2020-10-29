@@ -2,7 +2,7 @@
 
 > E-commerce site with prices generated in realtime via Google sheets  
 
-Simble web application that use Angular frontend to show products with option to buy them. Google sheet plays a role of the database. Thanks to [Ably](https://www.ably.io/) javascript library, Ably Reactor and Ably REST API calls it is possible to build realtime application with the stock within few hours.
+Simple web application that use Angular frontend to show products with option to buy them. Google sheet plays a role of the database. Thanks to [Ably Pub/Sub APIs](https://www.ably.io/pub-sub-messaging), [Ably integrations](https://www.ably.io/integrations) and [Ably REST API calls](https://www.ably.io/documentation/rest) it is possible to build realtime application with the stock within few hours.
 
 # Setup
 
