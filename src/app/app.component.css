@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -41,7 +45,7 @@ p {
   border: 1px solid #eee;
   background-color: #fafafa;
   width: 280px;
-  margin: 0 8px 16px;
+  margin: 8px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -81,5 +85,5 @@ p {
 }
 
 .card-container .card:not(:last-child) {
-  margin-right: 0;
+  /*margin-right: 0;*/
 }
