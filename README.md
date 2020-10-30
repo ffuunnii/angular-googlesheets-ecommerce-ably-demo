@@ -4,7 +4,7 @@
 
 Simple web application that use Angular frontend to show products with option to buy them. Google Sheet plays a role of the database. Thanks to [Ably Pub/Sub APIs](https://www.ably.io/pub-sub-messaging), [Ably integrations](https://www.ably.io/integrations) and [Ably REST API calls](https://www.ably.io/documentation/rest) it is possible to build realtime application with the stock within few hours.
 
-Ably is used as publish/subscribe platform to send the realtime data from Google Sheet to the frontend application if the information about stock was update in the table. Passing the information about purchase from the frontend to the stock in Google Sheet is covered by Ably channel as well.
+Ably is used as publish/subscribe platform to send the realtime data from Google Sheet to the frontend application if the information about stock was updated in the table. Passing the information about purchase from the frontend to the stock in Google Sheet is covered by Ably channel as well.
 
 &nbsp; 
 ## Web application with the Google Sheet backend?
